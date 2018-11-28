@@ -23,9 +23,10 @@ let g:jsx_ext_required = 0
 " Colors for GUI 
 if has('gui_running')
     syntax enable
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme gruvbox
     set background=dark
-    set guifont=Courier:h14
+    set guifont=Courier:h16
 endif
 
 " run clojure tests with vim-fireplace
