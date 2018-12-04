@@ -23,8 +23,7 @@ let g:jsx_ext_required = 0
 " Colors for GUI 
 if has('gui_running')
     syntax enable
-    "colorscheme solarized
-    colorscheme gruvbox
+    colorscheme solarized
     set background=dark
     set guifont=Courier:h16
 endif
