@@ -25,3 +25,6 @@
 [submodule "bundle/dracula"]
 	path = bundle/dracula
 	url = https://github.com/blueshirts/darcula.git
+[submodule "bundle/cypher-vim-syntax"]
+	path = bundle/cypher-vim-syntax
+	url = https://github.com/neo4j-contrib/cypher-vim-syntax.git

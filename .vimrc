@@ -31,4 +31,10 @@ endif
 
 " run clojure tests with vim-fireplace
 nmap cpt :Eval (clojure.test/run-tests *ns*)<cr>
+
+" toggle nerdtree
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+" reload cloure namespace
+map <Leader>r :Require<cr>
+

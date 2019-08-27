@@ -19,6 +19,11 @@ ln -s <cloned-dir> ~/.vim
 ln -s <cloned-dir>/.vimrc ~/.vimrc
 ```
 
+### Clojure Helpers
+*  `Leader-r` to reload the current namespace from the file system
+*  `cpt` to run tests in the current namespace
+
+
 ### Troubleshooting
 
 #### Plugins are not loading
