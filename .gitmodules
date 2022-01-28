@@ -28,3 +28,24 @@
 [submodule "bundle/cypher-vim-syntax"]
 	path = bundle/cypher-vim-syntax
 	url = https://github.com/neo4j-contrib/cypher-vim-syntax.git
+[submodule "pack/common/start/vim-color-solarized"]
+	path = pack/common/start/vim-color-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/common/start/ctrlp.vim"]
+	path = pack/common/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/common/start/vim-javascript"]
+	path = pack/common/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "pack/common/start/nerdtree"]
+	path = pack/common/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/common/start/vim-nerdtree-tabs"]
+	path = pack/common/start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "pack/clojure/start/vim-clojure-static"]
+	path = pack/clojure/start/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "pack/clojure/start/vim-fireplace"]
+	path = pack/clojure/start/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace.git
