@@ -20,7 +20,7 @@ ln -s <cloned-dir> ~/.vim
 ln -s <cloned-dir>/.vimrc ~/.vimrc
 ```
 
-#### vim-fireplace
+#### [vim-fireplace](https://github.com/tpope/vim-fireplace)
 vim-fireplace uses [cider-nrepl](https://docs.cider.mx/cider/basics/middleware_setup.html)
 nrepl middleware to accomplish many of it's tasks. The way I set it up is with
 Leiningen's `~/.lein/profiles.clj` file that looks like this:
@@ -38,7 +38,6 @@ for how to install on your system. This is what I did on mine:
 # nodejs installed previously 
 brew install cmake
 cd kapp-vim/pack/common/start/YouCompleteMe
-git submodule update --init --recursive
 python3 ./install.py --clangd-completer --ts-completer --java-completer
 ```
 
