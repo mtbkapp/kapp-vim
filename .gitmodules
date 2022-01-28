@@ -1,30 +1,24 @@
-[submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
-	url = https://github.com/guns/vim-clojure-static.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
+[submodule "pack/common/start/vim-color-solarized"]
+	path = pack/common/start/vim-color-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim-fireplace"]
-	path = bundle/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace.git
-[submodule "bundle/paredit"]
-	path = bundle/paredit
-	url = https://github.com/vim-scripts/paredit.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-nerdtree-tabs"]
-	path = bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
+[submodule "pack/common/start/ctrlp.vim"]
+	path = pack/common/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
+[submodule "pack/common/start/vim-javascript"]
+	path = pack/common/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "bundle/dracula"]
-	path = bundle/dracula
-	url = https://github.com/blueshirts/darcula.git
-[submodule "bundle/cypher-vim-syntax"]
-	path = bundle/cypher-vim-syntax
-	url = https://github.com/neo4j-contrib/cypher-vim-syntax.git
+[submodule "pack/common/start/nerdtree"]
+	path = pack/common/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/common/start/vim-nerdtree-tabs"]
+	path = pack/common/start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "pack/clojure/start/vim-clojure-static"]
+	path = pack/clojure/start/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "pack/clojure/start/vim-fireplace"]
+	path = pack/clojure/start/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace.git
+[submodule "pack/common/start/YouCompleteMe"]
+	path = pack/common/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

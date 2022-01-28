@@ -6,12 +6,9 @@ set cc=80
 set nowrap
 set hlsearch
 syntax enable
-
-" Pathogen 
-set nocompatible
-call pathogen#infect() 
 filetype plugin indent on
 
+" paredit
 let g:paredit_mode = 1
 
 " nerd tree like directory listings
@@ -22,11 +19,9 @@ let g:jsx_ext_required = 0
 
 " Colors for GUI 
 if has('gui_running')
-    syntax enable
-    "colorscheme solarized
-    colorscheme darcula 
+    colorscheme solarized
     set background=dark
-    set guifont=Courier:h16
+    set guifont=Monaco:h16
 endif
 
 " run clojure tests with vim-fireplace

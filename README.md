@@ -1,15 +1,16 @@
 My (Mac)Vim configuration.
 
 Uses these great plugins:
-*  [Pathogen](https://github.com/tpope/vim-pathogen)
 *  [vim-fireplace](https://github.com/tpope/vim-fireplace)
 *  [vim-clojure-static](https://github.com/guns/vim-clojure-static)
-*  [darcula colors](https://github.com/blueshirts/darcula)
 *  [vim-colors-solorized](https://github.com/altercation/vim-colors-solarized)
-*  [vim-paredit](https://github.com/vim-scripts/paredit.vim)
+*  [paredit](https://www.vim.org/scripts/script.php?script_id=3998)
 *  [nerdtree](https://github.com/scrooloose/nerdtree)
 *  [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
-*  [ctrlp](https://github.com/kien/ctrlp.vim)
+*  [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+*  [vim-javascript](https://github.com/pangloss/vim-javascript)
+*  [python.vim](https://www.vim.org/scripts/script.php?script_id=974)
+*  [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 
 ### Installation
 Backup then delete your existing ~/.vim and ~/.vimrc files.
@@ -17,6 +18,28 @@ Backup then delete your existing ~/.vim and ~/.vimrc files.
 git clone --recursive https://github.com/mtbkapp/kapp-vim.git 
 ln -s <cloned-dir> ~/.vim
 ln -s <cloned-dir>/.vimrc ~/.vimrc
+```
+
+#### vim-fireplace
+vim-fireplace uses [cider-nrepl](https://docs.cider.mx/cider/basics/middleware_setup.html)
+nrepl middleware to accomplish many of it's tasks. The way I set it up is with
+Leiningen's `~/.lein/profiles.clj` file that looks like this:
+```
+{:repl {:plugins [[cider/cider-nrepl "0.27.2"]
+                  [mx.cider/enrich-classpath "1.6.2"]]}}
+```
+
+#### [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+The YouCompleteMe plugin has modules that need to complied. See the it's README
+for how to install on your system. This is what I did on mine:
+```bash
+# jdk installed previously 
+# xcode command line tools installed previously
+# nodejs installed previously 
+brew install cmake
+cd kapp-vim/pack/common/start/YouCompleteMe
+git submodule update --init --recursive
+python3 ./install.py --clangd-completer --ts-completer --java-completer
 ```
 
 ### Clojure Helpers
@@ -44,5 +67,5 @@ git submodule update
 ```
 
 ### License
-Each plugin has its own license, so read those. 
-
+My config is free to use however you want. However, each plugin has its own
+license, so read those.
