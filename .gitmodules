@@ -19,3 +19,6 @@
 [submodule "pack/clojure/start/vim-fireplace"]
 	path = pack/clojure/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
+[submodule "pack/common/start/YouCompleteMe"]
+	path = pack/common/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

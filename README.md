@@ -10,6 +10,7 @@ Uses these great plugins:
 *  [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 *  [vim-javascript](https://github.com/pangloss/vim-javascript)
 *  [python.vim](https://www.vim.org/scripts/script.php?script_id=974)
+*  [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 
 ### Installation
 Backup then delete your existing ~/.vim and ~/.vimrc files.
@@ -29,9 +30,17 @@ Leiningen's `~/.lein/profiles.clj` file that looks like this:
 ```
 
 #### [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
-The YouCompleteMe plugin has modules that need to complied. 
-
-
+The YouCompleteMe plugin has modules that need to complied. See the it's README
+for how to install on your system. This is what I did on mine:
+```bash
+# jdk installed previously 
+# xcode command line tools installed previously
+# nodejs installed previously 
+brew install cmake
+cd kapp-vim/pack/common/start/YouCompleteMe
+git submodule update --init --recursive
+python3 ./install.py --clangd-completer --ts-completer --java-completer
+```
 
 ### Clojure Helpers
 *  `Leader-r` to reload the current namespace from the file system
@@ -58,6 +67,5 @@ git submodule update
 ```
 
 ### License
-Each plugin has its own license, so read those. 
-
-
+My config is free to use however you want. However, each plugin has its own
+license, so read those.
