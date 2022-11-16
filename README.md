@@ -5,8 +5,6 @@ Uses these great plugins:
 *  [vim-clojure-static](https://github.com/guns/vim-clojure-static)
 *  [vim-colors-solorized](https://github.com/altercation/vim-colors-solarized)
 *  [paredit](https://www.vim.org/scripts/script.php?script_id=3998)
-*  [nerdtree](https://github.com/scrooloose/nerdtree)
-*  [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
 *  [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 *  [vim-javascript](https://github.com/pangloss/vim-javascript)
 *  [python.vim](https://www.vim.org/scripts/script.php?script_id=974)
