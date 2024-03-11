@@ -39,6 +39,16 @@ cd kapp-vim/pack/common/start/YouCompleteMe
 python3 ./install.py --clangd-completer --ts-completer --java-completer
 ```
 
+Note: I've gotten compile errors trying to build YouCompleteMe on Mac OS 
+Monterrey with Homebrew Python 3.11.6. To get around this I installed Homebrew
+python@3.10 and then used that version to compile YouCompleteMe:
+```
+brew install python@3.10
+/usr/local/Cellar/python@3.10/3.10.13_1/bin/python3.10 ./install.py
+```
+
+On macOS Sonoma Home Brew appears to use `/opt/homebrew`
+
 ### Clojure Helpers
 *  `Leader-r` to reload the current namespace from the file system
 *  `cpt` to run tests in the current namespace
